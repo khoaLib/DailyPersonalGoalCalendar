@@ -1,0 +1,98 @@
+/* images class */
+.sunMoon {
+  height: 30px;
+}
+
+.lightmode {
+  height: 30px;
+}
+
+.darkMode {
+  height: 30px;
+}
+
+.symbolDark {
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  top: 20px;
+}
+
+.userDark {
+  height: 50px;
+  position: absolute;
+  right: 15px;
+}
+
+/* module selection */
+.topModule {
+  margin: 20px;
+}
+
+.body {
+  margin-left: 15px;
+  text-align: center;
+}
+
+.left {
+  float: left;
+  width: 25%;
+  height: 800px;
+  text-align: center;
+}
+
+.goalH1{
+  margin-top: 0;
+}
+
+.right{
+  float: right;
+  width: 25%;
+  height: 800px;
+  text-align: center;
+}
+
+.toDoH1{
+  margin-top: 0;
+}
+
+.center{
+  display:inline-block;
+  margin: 0 auto;
+  width: 50%;
+  height: 800px;
+  text-align: center;
+}
+
+.timeLogH1{
+  margin-top: 0;
+}
+
+/* vertical hr */
+.left-vertical {
+  border-right: 2px solid black;
+  height: 800px;
+  width: 0;
+  position: absolute;
+  left: 25%;
+  top: 75px;
+  box-shadow: 5px 5px 10px 2px;
+}
+
+.right-vertical {
+  border-right: 2px solid black;
+  height: 800px;
+  width: 0;
+  position: absolute;
+  left: 75%;
+  top: 75px;
+  box-shadow: 5px 5px 10px 2px;
+}
+
+/* horizontal hr */
+.topHr {
+  height: 15px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px;
+  border-top: 2px solid black;
+}

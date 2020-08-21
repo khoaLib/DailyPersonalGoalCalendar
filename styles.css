@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 /* images class */
 .sunMoon {
   height: 30px;
@@ -24,14 +28,82 @@
   right: 15px;
 }
 
+/* box seletor */
+.text-box-left {
+  border: 1px solid black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 8px;
+  width: 85%;
+  margin: 5px 5%;
+}
+
+.orninalNum{
+  float: left;
+  position: relative;
+  left: 10px;
+}
+
+.textable{
+  display: inline-block;
+  margin: auto;
+}
+
+.tickmeBox{
+  float: right;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  right: 10px;
+  top: -3px;
+}
+
+.text-box-center1{
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  width: 90%;
+  height: 250px;
+  margin: 5px 5% 0;
+
+}
+
+.text-box-center2{
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  width: 90%;
+  height: 180px;
+  margin: 5px 5% 0;
+}
+
+.text-box-center3{
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  width: 90%;
+  height: 90px;
+  margin: 5px 5% 0;
+}
+
+.text-box-right{
+  border: 1px solid black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 8px;
+  width: 80%;
+  height: 1px;
+  margin: 1px 10% ;
+  text-align: left;
+}
+
 /* module selection */
 .topModule {
   margin: 20px;
-}
-
-.body {
-  margin-left: 15px;
-  text-align: center;
 }
 
 .left {
@@ -41,37 +113,48 @@
   text-align: center;
 }
 
-.goalH1{
+.topH1 {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
-.right{
+.dailyH1{
+  margin: 10px auto;
+}
+
+.right {
   float: right;
   width: 25%;
   height: 800px;
   text-align: center;
 }
 
-.toDoH1{
-  margin-top: 0;
-}
-
-.center{
-  display:inline-block;
+.center {
+  display: inline-block;
   margin: 0 auto;
   width: 50%;
   height: 800px;
   text-align: center;
 }
 
-.timeLogH1{
-  margin-top: 0;
+.hrCenter1{
+  width : 6%;
+  margin: 0 auto;
+}
+
+.hrCenter2{
+  width : 5%;
+  margin: 0 auto;
+}
+.hrCenter3{
+  width : 4%;
+  margin: 0 auto;
 }
 
 /* vertical hr */
 .left-vertical {
   border-right: 2px solid black;
-  height: 800px;
+  height: 850px;
   width: 0;
   position: absolute;
   left: 25%;
@@ -81,7 +164,7 @@
 
 .right-vertical {
   border-right: 2px solid black;
-  height: 800px;
+  height: 850px;
   width: 0;
   position: absolute;
   left: 75%;

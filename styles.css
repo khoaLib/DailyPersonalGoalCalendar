@@ -1,13 +1,18 @@
 body {
   margin: 0;
+  /* background-color: black;
+  color: white; */
 }
+
+/****************** change to DarkMode CSS*********************/
+
 
 /* images class */
 .sunMoon {
   height: 30px;
 }
 
-.lightmode {
+.lightMode {
   height: 30px;
 }
 
@@ -36,6 +41,7 @@ body {
   border-radius: 8px;
   width: 85%;
   margin: 5px 5%;
+  /* background-color: white; */
 }
 
 .orninalNum{

@@ -1,3 +1,5 @@
+//mouseover event color in time log to see its eventName
+
 // receive event, check for valid input, color the time log based on input
 // event
 function getInfor() {
@@ -6,11 +8,11 @@ function getInfor() {
   validateTime(startTime);
   var endTime = prompt("Please enter event's end time as the form hh:mmpm OR hh:mmam");
   validateTime(endTime);
-  colorTimeLog(startTime, endTime);
+  colorTimeLog(startTime, endTime, name);
 }
 
 //Get the start time and endtime to know which log need to be be colored
-function colorTimeLog(begin, end) {
+function colorTimeLog(begin, end, name) {
   //work with startTime
   var hour = parseInt(begin.slice(0, 3));
   var minute = parseInt(begin.slice(3, 5));
@@ -26,15 +28,21 @@ function colorTimeLog(begin, end) {
   var startLog = decideTime(hour, dayOrNight);
   var endLog = decideTime(hour2, dayOrNight2);
   alert("startTime: " + startLog + ", And endTime: " + endLog);
-  fillColorLog(startLog, endLog);
+  fillColorLog(startLog, endLog, name);
 }
 
 //do the color with loop
-function fillColorLog(begin, end) {
+function fillColorLog(begin, end,name) {
   var i;
   for (i = begin; i <= end; i++) {
     $("div.event")[i].classList.add("lf");
+    $("div.event")[i].textContent = name;
   }
+  // $("div.event").hover(function() {
+  //   $(this).children(".eventName").show();
+  // }).mouseover(function() {
+  //   $(this).children(".eventName").hide();
+  // });
 }
 
 // receive hour and pm/am

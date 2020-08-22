@@ -10,7 +10,7 @@ body {
   width: 41%;
   position: relative;
   bottom: 39px;
-  left: 37px;
+  left: 40px;
 }
 
 .rf {
@@ -21,6 +21,15 @@ body {
   position: relative;
   bottom: 39px;
   left: 37px;
+}
+
+.eventName{
+  display: none;
+  position: relative;
+  left: 150px;
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
 }
 
 /************************** acolor time Log **************************/

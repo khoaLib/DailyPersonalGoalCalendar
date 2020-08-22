@@ -28,7 +28,22 @@ function colorTimeLog(begin, end, name) {
   var startLog = decideTime(hour, dayOrNight);
   var endLog = decideTime(hour2, dayOrNight2);
   alert("startTime: " + startLog + ", And endTime: " + endLog);
-  fillColorLog(startLog, endLog, name);
+  if (checkEventCollapsing(startLog, endLog)) {
+    alert("Your new event has been collapsed with existed event. We can't add it to your time log");
+  } else {
+    fillColorLog(startLog, endLog, name);
+  }
+}
+
+function checkEventCollapsing(startLog, endLog) {
+  var collapse = false;
+  var i;
+  for (i = startLog; i <= endLog; i++) {
+    if ($("div.event")[i].textContent !== "") {
+      collapse = true;
+    }
+  }
+  return collapse;
 }
 
 //do the color with loop
@@ -38,11 +53,6 @@ function fillColorLog(begin, end,name) {
     $("div.event")[i].classList.add("lf");
     $("div.event")[i].textContent = name;
   }
-  // $("div.event").hover(function() {
-  //   $(this).children(".eventName").show();
-  // }).mouseover(function() {
-  //   $(this).children(".eventName").hide();
-  // });
 }
 
 // receive hour and pm/am

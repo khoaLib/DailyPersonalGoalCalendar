@@ -1,11 +1,31 @@
 body {
   margin: 0;
-  /* background-color: black;
-  color: white; */
 }
 
+/************************** color time Log **************************/
+.lf {
+  background-color: orange;
+  display: inline-block;
+  height: 42px;
+  width: 41%;
+  position: relative;
+  bottom: 39px;
+  left: 37px;
+}
+
+.rf {
+  background-color: green;
+  display: inline-block;
+  height: 42px;
+  width: 41%;
+  position: relative;
+  bottom: 39px;
+  left: 37px;
+}
+
+/************************** acolor time Log **************************/
 /************************** adding button on right **************************/
-#addBtn{
+#addBtn {
   position: absolute;
   right: 0;
 }
@@ -25,7 +45,6 @@ body {
 }
 
 /****************** change to DarkMode and backward CSS*********************/
-
 /* images class */
 .sunMoon {
   height: 30px;
@@ -50,7 +69,6 @@ body {
 
 /* box seletor */
 .text-box-left {
-  /* border: 1px solid black; */
   padding-top: 30px;
   padding-bottom: 30px;
   border-radius: 8px;
@@ -80,7 +98,6 @@ body {
 }
 
 .text-box-center1 {
-  /* border: 1px solid black; */
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 8px;
@@ -90,7 +107,6 @@ body {
 }
 
 .text-box-center2 {
-  /* border: 1px solid black; */
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 8px;
@@ -100,7 +116,6 @@ body {
 }
 
 .text-box-center3 {
-  /* border: 1px solid black; */
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 8px;
@@ -110,7 +125,6 @@ body {
 }
 
 .text-box-right {
-  /* border: 1px solid black; */
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 8px;

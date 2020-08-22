@@ -4,6 +4,12 @@ body {
   color: white; */
 }
 
+/************************** adding button on right **************************/
+#addBtn{
+  position: absolute;
+  right: 0;
+}
+
 /****************** change to DarkMode and backward CSS*********************/
 .colorWhite {
   background-color: black;
@@ -19,10 +25,6 @@ body {
 }
 
 /****************** change to DarkMode and backward CSS*********************/
-
-
-
-
 
 /* images class */
 .sunMoon {
@@ -133,6 +135,7 @@ body {
 .topH1 {
   margin-top: 0;
   margin-bottom: 0;
+  display: inline-block;
 }
 
 .dailyH1 {

@@ -1,15 +1,14 @@
-// alert("Hello testing alert");
-// document.addEventListener("click", function(){
-//   document.get
-// })
+// receive event, check for valid input, color the time log based on input
+// event
 
 
-// function changeMode(){
-//   var x = document.
-// }
 
 
-document.querySelector("img").addEventListener("click", function() {});
+
+
+
+
+// Implementing darkmode
 $(document).ready(function() {
   var flag = false;
 
@@ -35,7 +34,7 @@ function changeBlackBackground() {
   $("div.right-vertical").removeClass("right-vertical").addClass("right-vertical-white");
 }
 
-function changeWhiteBackground(){
+function changeWhiteBackground() {
   $("body").removeClass("colorWhite");
   $("div.text-box-left").removeClass("colorBorderWhite").addClass("colorBorderBlack");
   $("div.text-box-right").removeClass("colorBorderWhite").addClass("colorBorderBlack");
@@ -48,7 +47,7 @@ function changeWhiteBackground(){
 function changeLightImage() {
   alert("Go dark mode");
   $("img.sunMoon").attr("src", "images\\moonDay.png");
-  $("img.darkMode").attr("src", "images\\lightMode.png");
+  $("img.darkMode").attr("src", "images\\lightButton.png");
   $("img.symbolDark").attr("src", "images\\symbolDark.png");
   $("img.userDark").attr("src", "images\\download.png");
 }
